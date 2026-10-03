@@ -1,0 +1,13 @@
+{
+  "name": "parkmatiq-landing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ParkMatiq landing page — one self-contained HTML file, no tracking, no hotlinked fonts.",
+  "scripts": {
+    "build": "node build.cjs"
+  },
+  "devDependencies": {
+    "@fontsource/dm-mono": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0"
+  }
+}
