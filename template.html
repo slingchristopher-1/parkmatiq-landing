@@ -59,46 +59,46 @@
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --navy:        #0A1F3D;
-      --navy-deep:   #020E24;
+      --navy:        #0B2347;
+      --navy-deep:   #010A1C;
       --yellow:      #FFE14D;
       --yellow-edge: #D9B900;
       --on-yellow:   #041020;
 
       --bg:          #020E24;
-      --surface:     #0A1F3D;
-      --field:       #0E2546;
+      --surface:     #12305A;
+      --field:       #0A1F3D;
       --text:        #E8F0FF;
-      --text-muted:  #6B92BB;
-      --border:      rgba(100, 160, 255, 0.14);
-      --shadow:      rgba(0, 0, 0, 0.5);
+      --text-muted:  #8AA9CE;
+      --border:      rgba(120, 170, 255, 0.18);
+      --shadow:      rgba(0, 0, 0, 0.55);
 
       --ink-on-navy:      #E8F0FF;
-      --ink-on-navy-soft: #6B92BB;
-      --rule-on-navy:     rgba(100, 160, 255, 0.16);
-      --card-on-navy:     rgba(100, 160, 255, 0.08);
+      --ink-on-navy-soft: #9DBAE0;
+      --rule-on-navy:     rgba(120, 170, 255, 0.18);
+      --card-on-navy:     rgba(120, 170, 255, 0.07);
     }
   }
 
   :root[data-theme="dark"] {
-    --navy:        #0A1F3D;
-    --navy-deep:   #020E24;
+    --navy:        #0B2347;
+    --navy-deep:   #010A1C;
     --yellow:      #FFE14D;
     --yellow-edge: #D9B900;
     --on-yellow:   #041020;
 
     --bg:          #020E24;
-    --surface:     #0A1F3D;
-    --field:       #0E2546;
+    --surface:     #12305A;
+    --field:       #0A1F3D;
     --text:        #E8F0FF;
-    --text-muted:  #6B92BB;
-    --border:      rgba(100, 160, 255, 0.14);
-    --shadow:      rgba(0, 0, 0, 0.5);
+    --text-muted:  #8AA9CE;
+    --border:      rgba(120, 170, 255, 0.18);
+    --shadow:      rgba(0, 0, 0, 0.55);
 
     --ink-on-navy:      #E8F0FF;
-    --ink-on-navy-soft: #6B92BB;
-    --rule-on-navy:     rgba(100, 160, 255, 0.16);
-    --card-on-navy:     rgba(100, 160, 255, 0.08);
+    --ink-on-navy-soft: #9DBAE0;
+    --rule-on-navy:     rgba(120, 170, 255, 0.18);
+    --card-on-navy:     rgba(120, 170, 255, 0.07);
   }
 
   /* ── Base ───────────────────────────────────────────────────── */
@@ -261,6 +261,7 @@
   .notif {
     background: var(--surface);
     color: var(--text);
+    border: 1px solid var(--border);
     border-radius: 14px;
     padding: 14px 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
@@ -291,10 +292,10 @@
     padding: 7px 14px;
     border-radius: 8px;
     background: var(--field);
-    color: var(--navy);
+    color: var(--text);
   }
   .notif-actions span.is-primary { background: var(--yellow); color: var(--on-yellow); }
-  .notif.is-done b { color: var(--navy); }
+  .notif.is-done b { color: var(--text); }
   .meter-fine {
     margin-top: 14px;
     font-size: 12.5px;
@@ -331,7 +332,7 @@
     padding: 4px 8px;
     border-radius: 6px;
     background: var(--field);
-    color: var(--navy);
+    color: var(--text);
     margin-bottom: 14px;
   }
 
